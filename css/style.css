@@ -759,7 +759,7 @@ button{
 	.proyecto__encriptador__textarea{
 		width: 95%;
 		height: 75%;
-		outline: var(--border--items);
+		border: var(--border--items);
 		border-radius: 5px;
 		background: #10afe021;
 		outline: none;

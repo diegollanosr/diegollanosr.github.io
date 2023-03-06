@@ -102,8 +102,8 @@ function desencriptar() {
 };
 
 function encriptador(txtCifrado) {
-	for (let i = 38; i >= 0; i--) {
-	//for(let i = 0; i < matrizCodigo.length; i++){
+	//for (let i = 38; i >= 0; i--) {
+	for(let i = 0; i < matrizCodigo.length; i++){
 		if(txtCifrado.includes(matrizCodigo[i][0])){
 			txtCifrado = txtCifrado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
 		}
