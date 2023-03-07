@@ -813,7 +813,9 @@ button{
 		width: 85%;
 	}
 /*portafolio*/
-
+	.programacion__targets.-portafolio{
+		min-height: 40vh;
+	}
 	.targets__portafolio{
 		width: 90vw;
 		display: flex;
