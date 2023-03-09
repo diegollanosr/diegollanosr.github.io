@@ -8,29 +8,22 @@
 	--color-blue-s: #062447;
 	--color-yellow: #f0db20;
 	--color-orange: #d6520b;
-
 	--font-monoespaciado: 'Space Mono', 'Lucidatypewriter',monospace;
 	--font-nombre: 'Great Vibes', 'Lucida Handwriting', cursive;
 	--font-titulos: 'Timmana', 'Helvetica', sans-serif;
 	--font-general: 'IBM Plex Serif', 'Lucida Bright', serif;
 	--font-cougure: 'Courgette','Segoe Print', cursive;
-	
 	--logo-principal: url(/imagenes/logo.svg) no-repeat center;
 	--img-presentacion: url(/imagenes/fotodlr.png) no-repeat center;
 	--img-aboutme: white url(/imagenes/foto_aboutme.png) no-repeat center;
-
 	--color--principal: var(--color-red);
 	--color--background: var(--color-white);
 	--buton--darkmode: var(--color-lila);
 	--color--text: var(--color-blue-s);
 	--texto--welcome: var(--color-lila);
-
 	--color--items: var(--color--principal);
 	--border--items: 2px solid var(--color--items);
-
 	--sombra--buton--darkmode: 0 0 15px 8px rgba(129, 0, 250, .5);
-
-	--color-green: #34a300;
 }
 *{
 	transition: .5s;
@@ -324,9 +317,6 @@ button{
 	.footer__container .text__resaltado{
 		color: var(--color-red);
 	}
-	
-
-
 /* Formatos de texto*/
 	.name{
 		color: var(--color-white);
@@ -408,7 +398,6 @@ button{
 		margin: .8em 0;
 		transition: .4s;
 	}
-
 /*home*/
 	.main__container{
 		content: "";
@@ -525,8 +514,6 @@ button{
 			box-shadow: 0 0 30px 1px var(--color--principal);
 		}
 	}
-
-
 /*Formacion*/
 	.target__container{
 		width: auto;
@@ -686,6 +673,7 @@ button{
 	.programacion__targets__img{
 		width: 50%;
 		min-width: 350px;
+		max-width: 450px;
 		height: auto;
 		object-fit: scale-down;
 		margin: auto;
@@ -877,10 +865,6 @@ button{
 		background: url(/imagenes/logos/tavo.png) no-repeat center;
 		background-size: contain;
 	}
-
-	
-
-
 /*Contacto*/
 	.container__contacto{
 		margin: auto;
@@ -980,11 +964,6 @@ button{
 		pointer-events: none;
 		opacity: 0;
 	}
-
-
-
-
-
 /*Responsive*/	
 	@media screen and (min-width:1550px) {
 		.main__container{
@@ -1150,7 +1129,6 @@ button{
 			justify-content: center;
 			align-items: center;
 		 }
-
 		.programacion__targets.mostrar .programacion__targets__img{
 			width: 60%;
 		}
@@ -1162,7 +1140,6 @@ button{
 		}		
 	}
 	@media screen and (max-width:850px) {
-		
 		.container__presentacion{
 			grid-template-columns: 1fr;
 			min-height: 55vh;
@@ -1199,11 +1176,11 @@ button{
 		.programacion__targets__items{
 			padding: 0;
 		}
-		.programacion__targets__img{
-			min-width: 80%;
-		}
+		.programacion__targets__img,
 		.targets__portafolio__img{
-			min-width: 80%;
+			min-width: 350px;
+			width: 50%;
+			max-width: 450px;
 		}
 		.container__contacto {
 			grid-template-columns: 1fr;
@@ -1284,7 +1261,6 @@ button{
 		.formulario__contacto p{
 			width: 100%;
 		}
-
 	}
 	@media screen and (max-width: 360px) {
 		.name{
