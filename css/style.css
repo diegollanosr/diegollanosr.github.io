@@ -1017,7 +1017,7 @@ button{
 			left: 0;
 			transform: translateX(-100%);
 			/*right: 100%;*/
-			top: 75px;
+			top: 70px;
 			width: 50%;
 			height: calc(100vh - 70px);
 			display: block;
@@ -1202,7 +1202,7 @@ button{
 		}
 		.navegacion__list{
 			width: 100%;
-			top: 54px;
+			top: 60px;
 			height: calc(100vh - 54px);
 			background-color: #0d0238;
 		}
