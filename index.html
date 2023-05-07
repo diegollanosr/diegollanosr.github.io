@@ -2,62 +2,66 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta name="author" content="Diego Llanos R.">
+    <meta name="keywords" content="diegollanosr, diegollanosr17, diego llanos, programador, programador front end, front end,  contador, contabilidad, finanzas personales, portafolio, portfolio">
+    <meta name="description" content="Contador y programador, siempre busco generar propuestas de valor para solucionar problemas financieros y optimización de procesos.">
     <meta name="copyright" content="Copyright Diego Llanos R.">
     <title>Portafolio @diegollanosr</title>
-    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logodlr.svg">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/imagenes/logodlr.svg">
+    
     <script src="https://kit.fontawesome.com/5829234c9c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=IBM+Plex+Serif&family=Space+Mono&family=Timmana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Courgette&family=Great+Vibes&family=Philosopher:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="dark">
     <header>
-        <div class="header__container">
+        <section class="header__container">
             <a href="https://diegollanosr.github.io/">
                 <div class="header__logo" alt="Logo de Diego Llanos"></div>
             </a>
             <p class="name">Diego Llanos R.</p>
             <div class="navegacion">
-                <nav class="barra__navegacion">
-                    <button id="button__menu" class="navegacion__responsive__menu">
-                        <i class="fa-solid fa-bars open__menu"></i>
-                        <i class="fa-solid fa-x close__menu"></i>
+                <nav id="barraNavegacion" class="barra__navegacion">
+                    <button id="button__menu" class="button__menu">
+                        <i class="bi bi-chevron-double-right" ></i>
                     </button>
                     <ul id="navegacion__list" class="navegacion__list">
                         <li class="navegacion__items">
                             <a class="navegacion__items__link active" href="#home">
-                                <i class="fa-sharp fa-solid fa-house-chimney navegacion__items__link__icon"></i>
+                                <i class="bi bi-house-door-fill navegacion__items__link__icon"></i>
                                 <span class="navegacion__items__link__text">Inicio</span>
                             </a>
                         </li>
                         <li class="navegacion__items submenu">
                             <a class="navegacion__items__link" href="#aboutme">
-                                <i class="fa-solid fa-info navegacion__items__link__icon"></i>
+                                <i class="bi bi-info-lg navegacion__items__link__icon"></i>
                                 <span class="navegacion__items__link__text">Sobre mi</span>
                             </a>
                             <ul class="navegacion__sublista">
-                                <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link"
-                                        href="#formacion">
-                                        <i class="fa-solid fa-graduation-cap navegacion__sublista__items__link__icon"></i>
-                                            <span class="navegacion__sublista__items__link__text">Formación</span>
-                                    </a></li>
+                                <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#formacion">
+                                    <i class="bi bi-mortarboard-fill navegacion__sublista__items__link__icon"></i>
+                                    <span class="navegacion__sublista__items__link__text">Formación</span>
+                                </a></li>
                                 <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#skills">
-                                        <i class="fa-solid fa-puzzle-piece navegacion__sublista__items__link__icon"></i>
-                                        <span class="navegacion__sublista__items__link__text">Skills</span>
-                                    </a></li>
+                                    <i class="bi bi-puzzle-fill navegacion__sublista__items__link__icon"></i>
+                                    <span class="navegacion__sublista__items__link__text">Skills</span>
+                                </a></li>
                                 <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#hobbies">
-                                    <i class="fa-solid fa-headphones navegacion__sublista__items__link__icon"></i>
-                                        <span class="navegacion__sublista__items__link__text">Hobbies</span>
-                                    </a></li>
+                                    <i class="bi bi-earbuds navegacion__sublista__items__link__icon"></i>
+                                    <span class="navegacion__sublista__items__link__text">Hobbies</span>
+                                </a></li>
                             </ul>
                         </li>
                         <li class="navegacion__items submenu">
                             <a class="navegacion__items__link" href="#proyectos">
-                                <i class="fa-sharp fa-solid fa-paperclip navegacion__items__link__icon"></i>
+                                <i class="bi bi-paperclip navegacion__items__link__icon"></i>
                                 <span class="navegacion__items__link__text">Proyectos</span>
                             </a>
                             <ul class="navegacion__sublista">
@@ -66,26 +70,26 @@
                                     <span class="navegacion__sublista__items__link__text">Contabilidad</span>
                                 </a></li-->
                                 <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#programacion">
-                                    <i class="fa-solid fa-code navegacion__sublista__items__link__icon"></i>
+                                    <i class="bi bi-code navegacion__sublista__items__link__icon"></i>
                                         <span class="navegacion__sublista__items__link__text">Programación</span>
                                     </a></li>
                                 <li class="navegacion__sublista__items"><a href="#disenho"
                                         class="navegacion__sublista__items__link">
-                                        <i class="fa-solid fa-pen-nib navegacion__sublista__items__link__icon"></i>
+                                        <i class="bi bi-vector-pen navegacion__sublista__items__link__icon"></i>
                                         <span class="navegacion__sublista__items__link__text">Diseño</span>
                                     </a></li>
                             </ul>
                         </li>
                         <li class="navegacion__items submenu">
                             <a class="navegacion__items__link" href="#contacto">
-                                <i class="fa-solid fa-at navegacion__items__link__icon"></i>
+                                <i class="bi bi-at navegacion__items__link__icon"></i>
                                 <span class="navegacion__items__link__text">Contacto</span>
                             </a>
                             <ul class="navegacion__sublista">
                                 <li class="navegacion__sublista__items ocultar">
                                     <a class="navegacion__sublista__items__link" href="https://github.com/diegollanosr"
                                         target="_BLANK">
-                                        <i class="fa-brands fa-github navegacion__sublista__items__link__icon"></i>
+                                        <i class="bi bi-github navegacion__sublista__items__link__icon"></i>
                                         <span class="navegacion__sublista__items__link__text">
                                             GitHub
                                         </span>
@@ -94,19 +98,19 @@
                                 <li class="navegacion__sublista__items ocultar"><a
                                         class="navegacion__sublista__items__link"
                                         href="https://linkedin.com/in/diegollanosr" target="_BLANK">
-                                        <i class="fa-brands fa-linkedin navegacion__sublista__items__link__icon"></i>
+                                        <i class="bi bi-linkedin navegacion__sublista__items__link__icon"></i>
                                         <span class="navegacion__sublista__items__link__text">Linkedin</span>
                                     </a></li>
                                 <li class="navegacion__sublista__items ocultar"><a
                                         class="navegacion__sublista__items__link"
                                         href="https://facebook.com/diegollanosr17" target="_BLANK">
-                                        <i class="fa-brands fa-facebook navegacion__sublista__items__link__icon"></i>
+                                        <i class="bi bi-facebook navegacion__sublista__items__link__icon"></i>
                                         <span class="navegacion__sublista__items__link__text">Facebook</span>
                                     </a></li>
                                 <li class="navegacion__sublista__items ocultar">
                                     <a class="navegacion__sublista__items__link"
                                         href="https://instagram.com/diegollanosr17" target="_BLANK">
-                                        <i class="fa-brands fa-instagram navegacion__sublista__items__link__icon"></i>
+                                        <i class="bi bi-instagram navegacion__sublista__items__link__icon"></i>
                                         <span class="navegacion__sublista__items__link__text">Instagram</span>
                                     </a>
                                 </li>
@@ -114,452 +118,581 @@
                         </li>
                     </ul>
                 </nav>
-                <button alt="activar modo oscuro" class="switch active" id="switch">
-                    <span>
-                        <i class="fa-solid fa-moon switch__moon"></i>
-                    </span>
-                    <span>
-                        <i class="fa-solid fa-sun switch__sunny"></i>
-                    </span>
-                </button>
                 <div alt="Cambiar los colores" id="cambio_colores" class="header__colors">
                     <div data-color="#2a74fd" class="header__color blue"></div>
                     <div data-color="#8100fa" class="header__color violet"></div>
-                    <div data-color="#c40f24" class="header__color red"></div>
-                    <div data-color="#d6520b" class="header__color orange"></div>
+                    <div data-color="#e8273e" class="header__color red"></div>
+                    <div data-color="#f75701" class="header__color orange"></div>
                 </div>
+                <button alt="activar modo oscuro" class="btn__darkmode active" id="btnDarkMode">
+                    <span>
+                        <img class="btn__darkmode__moon" src="./assets/imagenes/moon.jpg" alt="">
+                    </span>
+                    <span>
+                        <img class="btn__darkmode__sunny" src="./assets/imagenes/sun.jpg" alt="">
+                    </span>
+                </button> 
             </div>
-        </div>  
+        </section>  
     </header>
     <main>
-        <section id="home" class="main__container container__presentacion">
-            <div alt="foto" class="foto__presentacion"></div>
-            <div class="presentacion">
-                <h1 class="title">Hola, mi nombre es Diego Llanos <br></h1>
-                <p class="subtitle__n4">Bachiller en Contabilidad y Desarrollador Front-End Jr.</p>
-                <p class="subtitle__n3 welcome">B<span id="welcome"></span></p>
-                <p class="body__text">Estoy formado en la carrera de Contabilidad en la Universidad Nacional de Cajamarca.<br> Actualmente me encuentro participando del proyecto Oracle ONE en Alura Latam.
-                </p>
-                <p class="subtitle__n2">"No hay desarrollo profesional sin desarrollo personal"<br></p>
-                <ul class="presentacion__redessociales">
-                    <li class="presentacion__redessociales__items">
-                        <a class="presentacion__redessociales__items__link"
-                            href="https://github.com/diegollanosr" target="_BLANK">
-                            <i class="fa-brands fa-github presentacion__redessociales__items__icon"></i>
-                            GitHub
-                        </a>
-                    </li>
-                    <li class="presentacion__redessociales__items">
-                        <a class="presentacion__redessociales__items__link"
-                            href="https://linkedin.com/in/diegollanosr" target="_BLANK">
-                            <i class="fa-brands fa-linkedin presentacion__redessociales__items__icon"></i>Linkedin
-                        </a>
-                    </li>
-                    <li class="presentacion__redessociales__items"><a class="presentacion__redessociales__items__link"
-                            href="https://facebook.com/diegollanosr17" target="_BLANK">
-                            <i class="fa-brands fa-facebook presentacion__redessociales__items__icon"></i>Facebook
+        <article id="container" class="container">
+            <section id="home" class="home__container">
+                <figure alt="foto" class="home__foto"></figure>
+                <section class="home__presentacion">
+                    <h1 class="title">
+                        Hola, mi nombre es Diego Llanos
+                    </h1>
+                    <h2 class="subtitle__n4">
+                        Bachiller en Contabilidad y Desarrollador Front-End
+                    </h2>
+                    <p class="subtitle__n3 welcome"><span id="welcome"></span>_|</p>
+                    <p class="body__text">Estoy formado en la carrera de Contabilidad en la Universidad Nacional de Cajamarca.<br> Actualmente me encuentro participando del proyecto Oracle ONE en Alura Latam.
+                    </p>
+                    <p class="subtitle__n2">"No hay desarrollo profesional sin desarrollo personal"<br></p>
+                    <ul class="home__redessociales">
+                        <li class="home__redessociales__items">
+                            <a class="home__redessociales__items__link" href="https://github.com/diegollanosr"
+                                target="_BLANK">
+                                <i class="bi bi-github home__redessociales__items__icon"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="home__redessociales__items">
+                            <a class="home__redessociales__items__link" href="https://linkedin.com/in/diegollanosr"
+                                target="_BLANK">
+                                <i class="bi bi-linkedin home__redessociales__items__icon"></i>Linkedin
+                            </a>
+                        </li>
+                        <li class="home__redessociales__items"><a class="home__redessociales__items__link"
+                                href="https://facebook.com/diegollanosr17" target="_BLANK">
+                                <i class="bi bi-facebook home__redessociales__items__icon"></i>Facebook
+                            </a></li>
+                        <li class="home__redessociales__items"><a class="home__redessociales__items__link"
+                                href="https://instagram.com/diegollanosr17" target="_BLANK">
+                                <i class="bi bi-instagram home__redessociales__items__icon"></i>Instagram
+                            </a></li>
+                        <li class="home__redessociales__items"><a class="home__redessociales__items__link"
+                            href="https://youtube.com/@diegollanosr" target="_BLANK">
+                            <i class="bi bi-youtube home__redessociales__items__icon"></i>YouTube
                         </a></li>
-                    <li class="presentacion__redessociales__items"><a class="presentacion__redessociales__items__link"
-                            href="https://instagram.com/diegollanosr17" target="_BLANK">
-                            <i class="fa-brands fa-instagram presentacion__redessociales__items__icon"></i>Instagram
-                        </a></li>
-                    <li class="presentacion__redessociales__items">
-                        <a class="presentacion__redessociales__items__link"
-                            href="documentos/cv_diegollanosr.pdf" target="_BLANK">
-                            <i class="fa-sharp fa-solid fa-file presentacion__redessociales__items__icon"></i> CV
-                            <i class="fa-solid fa-arrow-up presentacion__redessociales__items__icon rotate"></i>
+                        <li class="home__redessociales__items">
+                            <a class="home__redessociales__items__link" href="./assets/documentos/cv_diegollanosr.pdf"
+                                target="_BLANK">
+                                <i class="bi bi-file-earmark-zip-fill home__redessociales__items__icon"></i> CV
+                                <i class="bi bi-arrow-up-right home__redessociales__items__icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="aboutme" class="aboutme__container">
+                <section class="aboutme__container__target">
+                    <article class="aboutme__items">
+                        <h2 class="subtitle">Sobre mi</h2>
+                        <article class="aboutme__items__info">
+                            <figure alt="foto" class="aboutme__items__img"></figure>
+                            <p class="body__text">
+                                Ya que llegaste hasta aquí déjame contarte un poco de mi.
+                            </p>
+                            <p class="body__text">
+                                Soy Diego Llanos Requelme, tengo <span class="body__text" id="edad"></span> años, soy de Perú.
+                            </p>
+                            <p class="body__text">
+                                Estudie Contabilidad y programación, puesto que siempre busco generar propuestas de valor para solucionar problemas financieros y la optimización de procesos.
+                                Mi aporte profesional se ha distinguido por ayudar en la sistematización de procesos para cumplir con
+                                las metas y objetivos de las personas y empresas para las que he trabajado.
+                            </p>
+                            <p class="body__text">
+                                Siempre estoy buscando como mejorar y aprender para poder ayudar a más personas, es por ello que soy
+                                responsable, autónomo, capaz de adquirir nuevos conocimientos con gran facilidad.
+                                Me gusta pasar tiempo y compartir mis conocimientos y orientar a las personas a tomar las mejores
+                                decisiones tanto en el ámbito profesional como el personal.
+                            </p>
+                            <p class="body__text">
+                                Salir de problemas económicos es necesario para prosperar, por ello brindo una asesoría personalizada
+                                para mejorar tus finanzas personales, y antes de que continúes te dejaré con una frase que me gusta
+                                mucho.
+                            </p>
+                            <p class="subtitle__n2">
+                                “Para llegar lejos empieza a hacer lo que hacen los grandes”
+                            </p>
+                            <p class="body__text">
+                                Por último quiero agradecerte por haber llegado hasta aquí.
+                            </p>
+                            <p class="body__text">
+                                No dudes en contactarme.
+                            </p>
+                        </article>
+                        <a class="aboutme__button__link" href="#contacto">
+                            <button class="aboutme__button">
+                                Contactar 
+                                <i class="bi bi-arrow-down aboutme__button__icon"></i>
+                            </button>
                         </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="container" id="aboutme">
-            <div class="main__container container__aboutme">
-                <h2 class="subtitle">Sobre mi</h2>
-                <div class="aboutme__items">
-                    <div alt="foto" class="aboutme__items__img"></div>
-                    <p class="body__text">
-                        Ya que llegaste hasta aquí déjame contarte un poco de mi.
-                    </p>
-                    <p class="body__text">
-                        Soy Diego Llanos Requelme, tengo 25 años, soy de Perú.
-                    </p>
-                    <p class="body__text">   
-                        Estudie Contabilidad y programación, puesto que siempre busco generar propuestas de valor para solucionar problemas financieros y de optimización, procesos. 
-                        Mi aporte profesional se ha distinguido por ayudar en la sistematización de procesos para cumplir con las metas y objetivos de las personas y empresas para las que he trabajado.
-                    </p>
-                    <p class="body__text">
-                        Siempre estoy buscando como mejorar y aprender para poder ayudar a más personas, es por ello que soy responsable, autónomo, capaz de adquirir nuevos conocimientos con gran facilidad. 
-                        Me gusta pasar tiempo y compartir mis conocimientos y orientar a las personas a tomar las mejores decisiones tanto en el ámbito profesional como el personal.
-                    </p>
-                    <p class="body__text">
-                        Salir de problemas económicos es necesario para prosperar, por ello brindo una asesoría personalizada para mejorar tus finanzas personales, y antes de que continúes te dejaré con una frase que me gusta mucho.
-                    </p>
-                    <p class="subtitle__n2">
-                    “Para llegar lejos empieza a hacer lo que hacen los grandes”
-                    </p>
-                    <p class="body__text">
-                        Por último quiero agradecerte por haber llegado hasta aquí. 
-                    </p>
-                    <p class="body__text">
-                        No dudes en contactarme.</p>
-                    <a class="aboutme__items__button" href="#contacto"><button class="aboutme__button">
-                        Contactar <i class="fa-solid fa-arrow-down"></i>
-                    </button></a>
-                </div>
-            </div>
-            <div id="formacion" class="main__container container__formacion">
-                <h2 class="subtitle">Formación</h2>
-                <div class="target__container">
-                    <div class="formacion__targets">
-                        <div class="formacion__targets__container">
-                            <div class="formacion__targets__items">
-                                <img src="imagenes/LOGO_UNC.png" alt="logo universidad" class="formacion__targets__img">
-                                <p class="subtitle__n4">Contabilidad - Universidad Nacional de Cajamarca</p>
+                    </article>
+                </section>
+                <section id="formacion" class="aboutme__items">
+                    <h2 class="subtitle">Formación</h2>
+                    <article class="aboume__formacion">
+                        <figure class="formacion__targets">
+                            <div class="formacion__targets__imagen">
+                                <img class="formacion__targets__imagen__img" src="./assets/imagenes/LOGO_UNC.png" alt="logo universidad">
                             </div>
-                        </div>
-                    </div>
-                    <div class="formacion__targets">
-                        <div class="formacion__targets__container">
+                            
+                            <p class="subtitle__n4">Contabilidad - Universidad Nacional de Cajamarca</p>
+                        </figure>
+                        <figure class="formacion__targets">
                             <div class="formacion__targets__items">
-                                <a href="https://app.aluracursos.com/emprega-one/profile/diegollanosr" target="_blank">
-                                    <img alt="logo Alura" src="imagenes/alura.svg" class="formacion__targets__img ligthmode">
-                                    <img alt="logo Alura" src="imagenes/alura__white.svg" class="formacion__targets__img darkmode">
-                                </a>
-                                <p class="text__center">Alura Latam</p>
+                                <div class="formacion__targets__item">
+                                    <div class="formacion__targets__imagen">
+                                        <a href="https://app.aluracursos.com/emprega-one/profile/diegollanosr" target="_blank">
+                                            <img class="formacion__targets__imagen__img" alt="logo Alura" src="./assets/imagenes/alura.svg">
+                                        </a>
+                                    </div>
+                                    <p class="text__center">Alura Latam</p>
+                                </div>
+                                <div class="formacion__targets__item">
+                                    <div class="formacion__targets__imagen">
+                                        <img class="formacion__targets__imagen__img" alt="logo ONE" src="./assets/imagenes/ONE.svg">
+                                    </div>
+                                    <p class="text__center">Oracle - ONE</p>
+                                </div>
                             </div>
-                            <div class="formacion__targets__items">
-                                <img alt="logo ONE" src="imagenes/ONE.svg" class="formacion__targets__img ligthmode " alt="">
-                                <img alt="logo ONE" src="imagenes/ONE__white.svg" class="formacion__targets__img darkmode">
-                                <p class="text__center">Oracle - ONE</p>
-                            </div>
-                        </div>
-                        <p class="subtitle__n4">Estoy aprendiendo en Oracle - ONE Proyecto ejecutado por Alura Latam</p>
-                    </div>
-                </div>
-            </div>
-            <div id="skills" class="main__container container__skills">
-                <h2 class="subtitle">Skills</h2>
-                <h3 class="subtitle__n3">Contabilidad</h3>
-                <div class="target__container">
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-pen-to-square targets__icon"></i>
-                        <p class="subtitle__n4">Registro de Compras y Ventas</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__avanzado"></div>
-                        </div>
-                        <div class="skill__target__text ">
-                            Todos los comprobantes registrados deben ser verificados si cumplen los requisitos mínimos para ser registrados y evitar sanciones de SUNAT.
-                        </div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-regular fa-file-lines targets__icon"></i>
-                        <p class="subtitle__n4">Declaraciones SUNAT</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__avanzado"></div>
-                        </div>
-                        <div class="skill__target__text">IGV, IR, PLE, AFPnet, PLAME.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-money-bill-transfer targets__icon"></i>
-                        <p class="subtitle__n4">Control de ingresos y gastos.</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__intermedio"></div>
-                        </div>
-                        <div class="skill__target__text">Llevar un buen registro permite tener una claridad de la situación financiera tanto de los negocios como de manera personal.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-calculator targets__icon"></i>
-                        <p class="subtitle__n4">Elaboración de presupuestos.</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__avanzado"></div>
-                        </div>
-                        <div class="skill__target__text">Los presupuestos son la forma de tener un plan para la utilización de los recursos financieros para lograr los objetivos establecidos.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-file-waveform targets__icon"></i>
-                        <p class="subtitle__n4">Elaboración EE.FF.</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__intermedio"></div>
-                        </div>
-                        <div class="skill__target__text">Los estados financieros son la representación de la situación de la empresa, la cual se debe elaborar en el momento adecuado para una buena toma de decisiones.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-file-shield targets__icon"></i>
-                        <p class="subtitle__n4">Declaración Jurada Anual</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__intermedio"></div>
-                        </div>
-                        <div class="skill__target__text ">Es importante cumplir las obligaciones tributarias para evitar sanciones y multas.
-                        </div>
-                    </div>
-                </div>
-                <h3 class="subtitle__n3">Programación</h3>
-                <div class="target__container">
-                    <div class="skills__targets">
-                        <i class="fa-brands fa-html5 targets__icon"></i>
-                        <p class="subtitle__n4">Html5</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__intermedio"></div>
-                        </div>
-                        <div class="skill__target__text">Tengo conocimientos intermedios y bien fundamentados de html, lo que me permite tener un panorama más claro a la hora de tomar mis decisiones de estructurar las páginas web.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-brands fa-css3-alt targets__icon"></i>
-                        <p class="subtitle__n4">Css3</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__avanzado"></div>
-                        </div>
-                        <div class="skill__target__text">Tengo conocimientos intermedios en css, lo que me permite tomar mejores decisiones para el diseño las páginas web.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-brands fa-js targets__icon"></i>
-                        <p class="subtitle__n4">JavaScript</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__basico"></div>
-                        </div>
-                        <div class="skill__target__text">Tengo conocimientos básicos de JavaScript para el funcionamiento y animaciones de las páginas web.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-mobile-screen targets__icon"></i>
-                        <p class="subtitle__n4">Responsive</p>
-                        <div class="skill__target__level">
-                            <div class="skill__target__level__intermedio"></div>
-                        </div>
-                        <div class="skill__target__text">Una de las cosas importantes al momento de hacer las páginas web es que sea funcional para todos los usuarios</div>
-                    </div>
-                </div>
-                <h2 class="subtitle">Softs Skills</h2>
-                <div class="target__container">
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-comments targets__icon"></i>
-                        <p class="subtitle__n4">Comunicación</p>
-                        <div class="skill__target__text ">Puedo mantener comunicación con el equipo de desarrollo, atento a cualquier inquietud que se presente con el fin de llevar el proyecto de manera correcta.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-code-compare targets__icon"></i>
-                        <p class="subtitle__n4">Interacción</p>
-                        <div class="skill__target__text ">Soy capaz de iterar, recibiendo e interpretando el feedback que me sea proporcionado con el fin de mejorar la calidad del producto que esté diseñando</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-user-plus targets__icon"></i>
-                        <p class="subtitle__n4">Coworking</p>
-                        <div class="skill__target__text ">Trato de ser un activo valioso en el equipo que esté trabajando, aportando mis conocimientos y material que optimice el flujo de trabajo en el desarrollo del proyecto.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-signs-post targets__icon"></i>
-                        <p class="subtitle__n4">Business Agility</p>
-                        <div class="skill__target__text ">Tengo la capacidad de adaptarme rápidamente a los cambios para la entrega de valor para los clientes.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-solid fa-bullseye targets__icon"></i>
-                        <p class="subtitle__n4">Planificación y Foco</p>
-                        <div class="skill__target__text ">Tengo la capacidad de establecer las prioridades en el desarrollo de las tareas y alcance de las metas.</div>
-                    </div>
-                    <div class="skills__targets">
-                        <i class="fa-regular fa-clock targets__icon"></i>
-                        <p class="subtitle__n4">Productividad</p>
-                        <div class="skill__target__text ">Tengo la capacidad de crear nuevos hábitos para una mejor administración del tiempo.</div>
-                    </div>
-                </div>
-            </div>
-            <div id="hobbies" class="main__container ">
-                <h2 class="subtitle">Hobbies e Intereses</h2>
-                <div class="target__container">
-                    <div class="hobbies__targets">
-                        <i class="fa-solid fa-headphones targets__icon"></i>
-                        <p class="subtitle__n4">Escuchar Música</p>
-                    </div>
-                    <div class="hobbies__targets">
-                        <i class="fa-solid fa-tv targets__icon"></i>
-                        <p class="subtitle__n4">Ver Series</p>
-                    </div>
-                    <div class="hobbies__targets">
-                        <i class="fa-solid fa-gamepad targets__icon"></i>
-                        <p class="subtitle__n4">Videojuegos</p>
-                    </div>
-                    <div class="hobbies__targets">
-                        <i class="fa-solid fa-pen-ruler targets__icon"></i>
-                        <p class="subtitle__n4">Dibujo</p>
-                    </div>
-                    <div class="hobbies__targets">
-                        <i class="fa-solid fa-compass-drafting targets__icon"></i>
-                           <p class="subtitle__n4">Diseño Gráfico</p>
-                    </div>
-                    <div class="hobbies__targets">
-                        <i class="fa-solid fa-chart-column targets__icon"></i>
-                        <p class="subtitle__n4">Finanzas Personales</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container" id="proyectos">
-            <h2 class="subtitle">Proyectos</h2>
-            <!--div id="contabilidad" class="main__container">
+                            <p class="subtitle__n4">Estoy aprendiendo en Oracle - ONE Proyecto ejecutado por Alura Latam</p>
+                        </figure>
+                    </article>
+                </section>
+                <section id="skills" class= "aboutme__container__target">
+                    <div class="aboutme__items">
+                        <h2 class="subtitle">Skills</h2>
+                        <h3 class="subtitle__n3">Contabilidad</h3>
+                        <section class="skills__targets">
+                            <figure class="skills__target">
+                                <i class="bi bi-pencil-square targets__icon"></i>
+                                <p class="subtitle__n4">Registro de Compras y Ventas</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__avanzado"></div>
+                                </div>
+                                <div class="skill__target__text ">
+                                    Todos los comprobantes registrados deben ser verificados si cumplen los requisitos mínimos para ser registrados y evitar sanciones de SUNAT.
+                                </div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-file-earmark-text targets__icon"></i>
+                                <p class="subtitle__n4">Declaraciones SUNAT</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__avanzado"></div>
+                                </div>
+                                <div class="skill__target__text">IGV, IR, PLE, AFPnet, PLAME.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-cash-coin targets__icon"></i>
+                                <p class="subtitle__n4">Control de ingresos y gastos.</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Llevar un buen registro permite tener una claridad de la situación financiera tanto de los negocios como de manera personal.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-calculator targets__icon"></i>
+                                <p class="subtitle__n4">Elaboración de presupuestos.</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__avanzado"></div>
+                                </div>
+                                <div class="skill__target__text">Los presupuestos son la forma de tener un plan para la utilización de los recursos financieros para lograr los objetivos establecidos.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-file-bar-graph targets__icon"></i>
+                                <p class="subtitle__n4">Elaboración EE.FF.</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Los estados financieros son la representación de la situación de la empresa, la cual se debe elaborar en el momento adecuado para una buena toma de decisiones.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-file-earmark-lock2 targets__icon"></i>
+                                <p class="subtitle__n4">Declaración Jurada Anual</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text ">Es importante cumplir las obligaciones tributarias para evitar sanciones y multas.
+                                </div>
+                            </figure>
+                        </section>
+                        <h3 class="subtitle__n3">Programación</h3>
+                        <section class="skills__targets">
+                            <figure class="skills__target">
+                                <i class="fa-brands fa-html5 targets__icon"></i>
+                                <p class="subtitle__n4">Html5</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Html es el lenguaje mas importante para estructurar las páginas web.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="fa-brands fa-css3-alt targets__icon"></i>
+                                <p class="subtitle__n4">Css3</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__avanzado"></div>
+                                </div>
+                                <div class="skill__target__text">Tengo conocimientos intermedios en css, lo que me permite tomar mejores decisiones para el diseño las páginas web.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="fa-brands fa-js targets__icon"></i>
+                                <p class="subtitle__n4">JavaScript</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Tengo conocimientos básicos de JavaScript para el funcionamiento y animaciones de las páginas web.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-phone targets__icon"></i>
+                                <p class="subtitle__n4">Responsive</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Una de las cosas importantes al momento de hacer las páginas web es que sea funcional para todos los usuarios</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-github targets__icon"></i>
+                                <p class="subtitle__n4">GitHub</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">
+                                    GitHub es el repositorio más usado para guardar y mostrar los proyectos realizados.
+                                </div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-git targets__icon"></i>
+                                <p class="subtitle__n4">Git</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">
+                                    Git es la herramienta mas importante al momento de guardar el progreso del desarrollo de proyectos.
+                                </div>
+                            </figure>
+                        </section>
+                        <h2 class="subtitle">Softs Skills</h2>
+                        <section class="skills__targets">
+                            <figure class="skills__target">
+                                <i class="bi bi-wechat targets__icon"></i>
+                                <p class="subtitle__n4">Comunicación</p>
+                                <div class="skill__target__text ">Puedo mantener comunicación con el equipo de desarrollo, atento a cualquier inquietud que se presente con el fin de llevar el proyecto de manera correcta.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-diagram-3-fill targets__icon"></i>
+                                <p class="subtitle__n4">Interacción</p>
+                                <div class="skill__target__text ">Soy capaz de iterar, recibiendo e interpretando el feedback que me sea proporcionado con el fin de mejorar la calidad del producto que esté diseñando</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-person-plus-fill targets__icon"></i>
+                                <p class="subtitle__n4">Coworking</p>
+                                <div class="skill__target__text ">Trato de ser un activo valioso en el equipo que esté trabajando, aportando mis conocimientos y material que optimice el flujo de trabajo en el desarrollo del sproyecto.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-signpost-split-fill targets__icon"></i>
+                                <p class="subtitle__n4">Business Agility</p>
+                                <div class="skill__target__text ">Tengo la capacidad de adaptarme rápidamente a los cambios para la entrega de valor para los clientes.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-bullseye targets__icon"></i>
+                                <p class="subtitle__n4">Planificación y Foco</p>
+                                <div class="skill__target__text ">Tengo la capacidad de establecer las prioridades en el desarrollo de las tareas y alcance de las metas.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-clock targets__icon"></i>
+                                <p class="subtitle__n4">Productividad</p>
+                                <div class="skill__target__text ">Tengo la capacidad de crear nuevos hábitos para una mejor administración del tiempo.</div>
+                            </figure>
+                        </section>
+                    </div>    
+                </section>
+                <section id="hobbies" class="aboutme__items ">
+                    <h2 class="subtitle">Hobbies e Intereses</h2>
+                    <section class="hobbies__targets">
+                        <figure class="hobbies__target">
+                            <i class="bi bi-headphones targets__icon"></i>
+                            <p class="subtitle__n4">Escuchar Música</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-display targets__icon"></i>
+                            <p class="subtitle__n4">Ver Series</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-controller targets__icon"></i>
+                            <p class="subtitle__n4">Videojuegos</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-brush-fill targets__icon"></i>
+                            <p class="subtitle__n4">Dibujo</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-rulers targets__icon"></i>
+                            <p class="subtitle__n4">Diseño Gráfico</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-graph-up-arrow targets__icon"></i>
+                            <p class="subtitle__n4">Finanzas Personales</p>
+                        </figure>
+                    </section>
+                </section>
+            </section>
+            <section class="proyectos__container" id="proyectos">
+                <h2 class="subtitle">Proyectos</h2>
+                <!--div id="contabilidad" class="main__container">
                     <h2 class="subtitle">Contabilidad</h2>
                 </div-->
-            <div id="programacion" class="main__container container__programacion">
-                <h2 class="subtitle__n2">Programación</h2>
-                <p class="subtitle__n3"> Encriptador de Textos 2.0</p>
-                <div id="target__encriptador" class="programacion__targets target__encriptador">
-                    <div class="programacion__targets__items">
-                        <img src="imagenes/encriptador.png" class="programacion__targets__img" alt="foto de previsualización">
-                        <div class="">
-                            <p class="text__center">
-                                Tecnologías usadas:
-                                 <i class="fa-brands fa-html5 programacion__targets__icon"></i> HTML5, 
-                                 <i class="fa-brands fa-css3-alt programacion__targets__icon "></i> CSS3, 
-                                 <i class="fa-brands fa-js programacion__targets__icon"></i> JavaScript.
-                            </p>
-                        </div>
-                        <div class="programacion__targets__buttones">
-                            <button id="mostrar_encriptador" class="programacion__targets__button">Vista previa</button>
-                            <!--a href="https://diegollanosr.github.io/encriptadorONE/" target="_blank"><button class="programacion__targets__button">Ir al proyecto</button></a-->
-                            <a href="https://github.com/diegollanosr/encriptadorONE.git" target="_blank"
-                                class="programacion__targets__button__link">
-                                <button class="programacion__targets__button"> 
-                                    <i class="fa-solid fa-code programacion__targets__button__icon"></i> Code
-                                </button>
+                <section id="programacion" class="programacion__container">
+                    <div class="programacion__info">
+                        <h2 class="subtitle__n3">Programación</h2>
+                        <p class="body__text">En mi carrera de programación he elaborado y desarrollado varios proyectos siendo los siguientes los más importantes que he realizado.</p>
+                    </div>
+                    <div class="div__button__mostrar__targets">
+                        <button id="buttonMostrarTargets" class="button__mostrar__targets">
+                            Ver Más
+                        </button>
+                    </div>
+                    <div class="programacion__targets">
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/encriptador_one.png" alt="">
+                            <p class="subtitle__n4">Encriptador de textos </p>
+                            <p class="programacion__info">Diseño propuesto por Alura</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/encriptadorONE" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/encriptadorONE" target="_blank">
+                                <button class="programacion__target__button">Code</button>
                             </a>
                         </div>
-                    </div>
-                    <div class="proyecto__encriptador">
-                        <div class="proyecto__encriptador__ingreso">
-                            <textarea class="proyecto__encriptador__textarea " type="text"
-                                id="textoInicial" rows="4"
-                                placeholder='Ingrese el texto aquí... ¡Solo letras minúsculas, sin acentos ni números!'></textarea>
-                            <div class="proyecto__encriptador__buttons">
-                                <button onclick="encriptar()" class="proyecto__encriptador__button"><i class="fa-solid fa-lock"></i> Encriptar</button>
-                                <button onclick="desencriptar()"
-                                    class="proyecto__encriptador__button"><i class="fa-solid fa-lock-open"></i> Desencriptar</button>
-                            </div>
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/encriptador_pers.png" alt="">
+                            <p class="subtitle__n4">Encriptador de textos </p>
+                            <p class="programacion__info">Diseño propio</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/encriptador" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/encriptador" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>                            
                         </div>
-                        <div class="proyecto__encriptador__salida">
-                            <textarea class="proyecto__encriptador__textarea " type="text"
-                                id="textoFinal" rows="4" placeholder="Ningún mensaje encontrado"></textarea>
-                            <div class="proyecto__encriptador__buttons">
-                                <button onclick="copiar()" id="button__copiar"
-                                    class="proyecto__encriptador__button"><i class="fa-regular fa-copy"></i> Copiar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="subtitle__n3">Portafolio</p>
-                <div class="programacion__targets -portafolio">
-                    <div class="targets__portafolio">
-                        <img src="/imagenes/responsivo_dark.png" class="targets__portafolio__img ligthmode" alt="foto de previsualización">
-                        <img src="/imagenes/responsivo_white.png" class="targets__portafolio__img darkmode" alt="foto de previsualización">
-                        <div class="">
-                            <p class="text__center">
-                                Tecnologías usadas:
-                                 <i class="fa-brands fa-html5 programacion__targets__icon"></i> HTML5, 
-                                 <i class="fa-brands fa-css3-alt programacion__targets__icon "></i>CSS3, 
-                                 <i class="fa-brands fa-js programacion__targets__icon"></i> JavaScript, 
-                                 <i class="fa-solid fa-mobile-screen programacion__targets__icon"></i> Responsive.
-                            </p>
-                        </div>
-                        <div class="programacion__targets__buttones">
-                            <a href="https://github.com/diegollanosr/diegollanosr.github.io.git" target="_blank"
-                                class="programacion__targets__button__link">
-                                <button class="programacion__targets__button">
-                                    <i class="fa-solid fa-code programacion__targets__button__icon"></i> Code
-                                </button>
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/portafolio_one.png" alt="">
+                            <p class="subtitle__n4">Portafolio </p>
+                            <p class="programacion__info">Diseño propuesto por Alura</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/portafolio" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/portafolio" target="_blank">
+                                <button class="programacion__target__button">Code</button>
                             </a>
                         </div>
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/portafolio_pers.png" alt="">
+                            <p class="subtitle__n4">Portafolio</p>
+                            <p class="programacion__info">Diseño propio</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/diegollanosr.github.io" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>
+                        </div>
+<!--                         
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/alurageek_one.png" alt="">
+                            <p class="subtitle__n4">AluraGeek</p>
+                            <p class="programacion__info">Diseño propuesto por Alura</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/alurageekONE" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/alurageekONE" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>
+                        </div> 
+-->
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/alurageek_pers.png" alt="">
+                            <p class="subtitle__n4">AluraGeek</p>
+                            <p class="programacion__info">Diseño propio</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/alurageek" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/alurageek" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>
+                        </div>
+<!-- 
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="" alt="">
+                            <p class="subtitle__n4">AluraFlix</p>
+                            <p class="programacion__info">Diseño propuesto por Alura</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <button class="programacion__target__button">Ver proyecto</button>
+                            <button class="programacion__target__button">Code</button>
+                        </div>
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="" alt="">
+                            <p class="subtitle__n4">AluraFlix</p>
+                            <p class="programacion__info">Diseño propio</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <button class="programacion__target__button">Ver proyecto</button>
+                            <button class="programacion__target__button">Code</button>
+                        </div>
+-->
                     </div>
+                </section>
+                <section id="disenho" class="disenho__container">
+                    <div class="disenho__info">
+                        <h2 class="subtitle__n2">Diseños</h2>
+                        <p class="body__text">La imagen también es muy importante y un logo es la primera impresión que tendrán
+                            nuestros clientes la que nos ayudara a recordarnos, por eso que aquí te presento los trabajos de Diseño
+                            más importantes que he realizado.
+                        </p>
+                    </div>
+                    <section class="disenho__targets">
+                        <div class="disenho__target">
+                            <div class="disenho__items__img img__diegollanosr"></div>
+                            <p class="text__center">@diegollanosr</p>
+                        </div>
+                        <div class="disenho__target">
+                            <div class="disenho__items__img img__inmowasi"></div>
+                            <p class="text__center">Inmo Wasi</p>
+                        </div>
+                        <div class="disenho__target">
+                            <div class="disenho__items__img img__tavo"></div>
+                            <p class="text__center">Servicio Técnico Tavo</p>
+                        </div>
+                        <div class="disenho__target">
+                            <div class="disenho__items__img img__palmeras"></div>
+                            <p class="text__center">Proy. Inmobiliario<br>Las Palmeras</p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section id="contacto" class="contacto__container" >
+                <h2 class="subtitle">Contacto</h2>
+                <div class="contacto__items">
+                    <div class="informacion__contacto">
+                        <p class="subtitle__n2">¿Quieres contactarme?</p>
+                        <p class="text__center">Complete el siguiente formulario te contactare lo antes posible.<br>O puedes enviarme un
+                            mensaje al WhatsApp.</p>
+                        <p class="ocultar"><i class="bi bi-journal-medical"></i></p>
+                        <p class="contacto__icons">
+                            <a class="contacto__icon" href="https://wa.me/message/TU5QLECZNAOZA1"  target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            <a class="contacto__icon" id="mailto" href="mailto:dlrasesores17@gmail.com">
+                                <i class="bi bi-envelope-plus-fill"></i>
+                            </a>
+                            <a class="contacto__icon" href="https://www.linkedin.com/in/diegollanosr" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </p>
+                        <p class="text__usuario">@diegollanosr<span class="text__resaltado">17</span></p>
+                    </div>
+                    <form id="formularioContacto" class="formulario__contacto">
+                        <p>
+                            <label class="formulario__contacto__item " for="fullName">Nombre <span
+                                    class="text__resaltado">*</span></label>
+                            <input class="formulario__contacto__item__input " type="text" id="fullName" name="fullName" placeholder=" Nombre y Apellido"></input>
+                        </p>
+                        <p>
+                            <label class="formulario__contacto__item " for="email">Email <span class="text__resaltado">*</span></label>
+                            <input class="formulario__contacto__item__input " type="email" id="email" name="email"
+                                placeholder="email@contacto.com"></input>
+                        </p>
+                        <p>
+                            <label class="formulario__contacto__item " for="phone">Teléfono</label>
+                            <input class="formulario__contacto__item__input" type="tel" name="phone" id="phone"
+                                placeholder="+51 927 702 257"></input>
+                        </p>
+                        <p>
+                            <label for="affair" class="formulario__contacto__item ">Asunto<span class="text__resaltado">*</span></label>
+                            <input class="formulario__contacto__item__input " type="affair" id="affair" name="affair"
+                                placeholder="Asunto..."></input>
+                        </p>
+                        <textarea class="formulario__contacto__item__textarea " id="message" name="message" rows="4"
+                            placeholder="* Mensaje"></textarea>
+                        <button type="submit" class="formulario__contacto__item__button  button">Enviar</button>
+                        <p id="mensajeError" class="mensaje_contacto"></p>
+                    </form>
                 </div>
-            </div>
-            <div id="disenho">
-                <div class="disenho__container">
-                    <p><h2 class="subtitle__n2">Diseños</h2></p>
-                    <p class="body__text">La imagen también es muy importante y un logo es la primera impresión que tendrán nuestros clientes la que nos ayudara a recordarnos, por eso que aquí te presento los trabajos de Diseño más importantes que he realizado.</p>
-                    <div class="disenho__targets">
-                        <div class="disenho__items__img img__diegollanosr"></div>
-                        <p class="text__center">@diegollanosr</p>
-                    </div>
-                    <div class="disenho__targets">
-                        <div class="disenho__items__img img__inmowasi"></div>
-                        <p class="text__center">Inmo Wasi</p>
-                    </div>
-                    <div class="disenho__targets">
-                        <div class="disenho__items__img img__tavo"></div>
-                        <p class="text__center">Servicio Técnico Tavo</p>
-                    </div>
-                    <div class="disenho__targets">
-                        <div class="disenho__items__img img__palmeras"></div>
-                        <p class="text__center">Proy. Inmobiliario<br>Las Palmeras</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container" id="contacto" class="main__container">
-            <h2 class="subtitle">Contacto</h2>
-            <div class="container__contacto">
-                <div class="informacion__contacto">
-                    <p class="subtitle__n2">¿Quieres contactarme?</p>
-                    <p class="text__center">Complete el siguiente formulario te contactare lo antes posible.<br>O puedes enviarme un mensaje al WhatsApp.</p>
-                    <p class="ocultar"><i class="fa-regular fa-address-book"></i></p>
-                    <p>
-                        <a class="contacto__icon" href="https://wa.me/message/TU5QLECZNAOZA1">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a class="contacto__icon" href="mailto:dlrasesores17@gmail.com">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                        <a class="contacto__icon" href="https://www.linkedin.com/in/diegollanosr">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </p>
-                    <p class="text__usuario">@diegollanosr<span class="text__resaltado">17</span></p>
-                </div>
-                <form id="formulario" action="" class="formulario__contacto" action="">
-                    <p>
-                        <label class="formulario__contacto__item " for="fullName">Nombre <span class="text__resaltado">*</span></label>
-                        <input class="formulario__contacto__item__input " type="text
-                            " id="fullName" name="fullName" placeholder=" Nombre y Apellido" ></input>
-                    </p>
-                    <p>
-                        <label class="formulario__contacto__item " for="email">Email <span class="text__resaltado">*</span></label>
-                        <input class="formulario__contacto__item__input " type="email" id="email" name="email"
-                            placeholder="email@contacto.com" ></input>
-                    </p>
-                    <p>
-                        <label class="formulario__contacto__item " for="phone">Teléfono</label>
-                        <input class="formulario__contacto__item__input " type="phone" name="phone" id="phone"
-                        placeholder="+51 927 702 257"></input>
-                    </p>
-                    <p>
-                        <label for="affair" class="formulario__contacto__item ">Asunto<span class="text__resaltado">*</span></label>
-                        <input class="formulario__contacto__item__input " type="affair" id="affair" name="affair" placeholder="Asunto..." ></input>
-                    </p>
-                    <textarea class="formulario__contacto__item__textarea " id="message" name="message" rows="4" placeholder="* Mensaje"></textarea>
-                    <button type="submit" class="formulario__contacto__item__button  button">Enviar</button>
-                    <a href="mailto:dlrasesores17@gmail.com" id="mailto"></a>
-                </form>
-            </div>
-        </section>
+            </section>
+        </article>
     </main>
     <footer>
-        <div class="footer__container">
-            <p>Create by <span class="text__usuario">@diegollanosr<span class="text__resaltado">17</span></span></p>
+        <section id="footer" class="footer__container">
+            <p>Create by <span class="footer__text__usuario">@diegollanosr<span class="text__resaltado">17</span></span></p>
             <div class="footer__redessociales">
                 <a href="https://github.com/diegollanosr" target="_BLANK">
-                    <i class="fa-brands fa-github footer__icons "></i>
+                    <i class="bi bi-github footer__icons "></i>
                 </a>
                 <a href="https://www.linkedin.com/in/diegollanosr/" target="_BLANK">
-                    <i class="fa-brands fa-linkedin footer__icons"></i>
+                    <i class="bi bi-linkedin footer__icons"></i>
                 </a>
                 <a href="https://facebook.com/diegollanosr17" target="_BLANK">
-                    <i class="fa-brands fa-facebook footer__icons"></i>
+                    <i class="bi bi-facebook footer__icons"></i>
                 </a>
                 <a href="https://instagram.com/diegollanosr17" target="_BLANK">
-                    <i class="fa-brands fa-instagram footer__icons"></i>
+                    <i class="bi bi-instagram footer__icons"></i>
+                </a>
+                <a href="https://youtube.com/@diegollanosr" target="_BLANK">
+                    <i class="bi bi-youtube footer__icons"></i>
                 </a>
             </div>
-            <p> &copy Copyright Diego Llanos R. - 2023 </p>
-        </div>
+            <p> &copy Copyright Diego Llanos R. - <span id="anhoActual"></span></p>
+        </section>
     </footer>
 </body>
-<script src="js/script.js" defer></script>
-<script src="js/animaciones.js" defer></script>
+<script src="./assets/js/script.js" defer></script>
+<script src="./assets/js/animaciones.js" defer></script>
 </html>
