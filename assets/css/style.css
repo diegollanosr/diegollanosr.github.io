@@ -375,12 +375,12 @@ footer{
 .name{
 	color: var(--color-white);
 	font-family: var(--font-nombre);
-	font-size: clamp(1.5rem, 5vw, 2.4rem);
+	font-size: clamp(1.8rem, 5vw, 2.4rem);
 	text-align: center;
 	transition: all .3s;
 }
 .title {
-	font-size: clamp(1.5rem, 5vw, 2.3rem);
+	font-size: clamp(1.75rem, 5vw, 2.3rem);
 	font-weight: bold;
 	font-family: var(--font-titulos);
 	text-align: center;
@@ -388,7 +388,7 @@ footer{
 	color: var(--color--text);
 }
 .subtitle{
-	font-size: clamp(1.3rem, 5vw, 1.7rem);
+	font-size: clamp(1.5rem, 5vw, 1.7rem);
 	font-family: var(--font-titulos);
 	text-align: center;
 	font-weight: 400;
@@ -397,14 +397,14 @@ footer{
 	font-weight: bold;
 }
 .subtitle__n2{
-	font-size: clamp(1rem, 3.5vw, 1.5rem);
+	font-size: clamp(1.4rem, 3.5vw, 1.5rem);
 	font-family: var(--font-courgette);
 	text-align: center;
 	transition: all .3s;
 	color: var(--color--text);
 }
 .subtitle__n3{
-	font-size: clamp(.9rem, 3.5vw, 1.2rem);
+	font-size: clamp(1.3rem, 3.5vw, 1.2rem);
 	font-family: var(--font-monoespaciado);
 	font-weight: bold;
 	text-align: center;
@@ -413,7 +413,7 @@ footer{
 	line-height: 1.3em
 }
 .subtitle__n4{
-	font-size: clamp(.7rem, 3vw, 1.1rem);
+	font-size: clamp(.95rem, 3vw, 1.1rem);
 	font-family: var(--font-titulos);
 	color: var(--color--text);
 	line-height: 1.4em;
@@ -428,11 +428,11 @@ footer{
 }
 
 .body__text{
-	font-size: clamp(.8rem, 2.5vw, 1.2rem);
+	font-size: clamp(.95rem, 2.5vw, 1.2rem);
 	line-height: 1.5em;
 }
 .text__center{
-	font-size: clamp(.8rem, 2.3vw, 1rem);
+	font-size: clamp(.95rem, 2.3vw, 1rem);
 	line-height: 1.3em;
 	text-align: center;
 }
@@ -449,7 +449,7 @@ footer{
 }
 .welcome{
 	text-align: center;
-	font-size: clamp(.75rem, 3vw, 1.1rem);
+	font-size: clamp(.95rem, 3vw, 1.1rem);
 	color: var(--color--principal);
 	transition: all .3s;
 }
