@@ -1045,6 +1045,16 @@ footer{
 .formulario__contacto__item__input.error:focus::placeholder{
 	color: #ff00009a;
 }
+.acepTitle{
+	color: #20bb20;
+}
+.errorTitle{
+	color: #fd1f4a;
+}
+.alertMessage{
+	color:  #295afa;
+}
+
 
 @media screen and (max-width:750px) {
 	.header__logo{

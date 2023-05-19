@@ -66,8 +66,28 @@ $cerrarmenu.forEach(menuLink => {
 	}
 });
 
+
+const newAlert = (alertTitle, title, mensaje, icono, color) => {
+	swal.fire({
+		title: `<span class=${alertTitle}>${title}</span>`,
+		html: `<span class='alertMessage'>${mensaje}</span>`,
+		icon: `${icono}`,
+		iconColor: `${color}`,
+		background: "#2d2c2e",
+		timer: 3000,
+		allowOutsideClick: true,
+		allowEscapeKey: true,
+		allowEnterKey: true,
+		stopKeydownPropagation: false,
+		showConfirmButton: true,
+		confirmButtonColor: "#295afa",
+		confirmButtonAriaLabe: "Confirmar",
+	})
+};
+
+
 const campos = {
-	fullName: formularioContacto.fullName,
+	fullName: formularioContacto.name,
 	email: formularioContacto.email,
 	// phone: formularioContacto.phone,
 	affair: formularioContacto.affair,
@@ -102,6 +122,11 @@ const limpiarForm = () => {
 	affair.value = "";
 	message.value = "";
 	mensajeError.innerHTML = "";
+	fullName.classList.remove("error")
+	email.classList.remove("error")
+	phone.classList.remove("error")
+	affair.classList.remove("error")
+	message.classList.remove("error")
 } 
 
 fullName.addEventListener("keyup", validateEmpty);
@@ -133,15 +158,20 @@ function enviarFormulario(e) {
 			mensajeError.innerHTML = "Corregir campos marcados antes de enviar Formulario"
 		} else {
 			mensajeError.classList.remove("error");
-			mensajeError.innerHTML = "<i id='trash' class='bi bi-trash-fill'></i>";
-			const trash = document.getElementById("trash");
-			trash.addEventListener("click", limpiarForm);
-			const form = new FormData(this);
-			$mailto.setAttribute('href', `mailto:dlrasesores17@gmail.com?subject= Asunto: ${form.get('affair')} &body=Nombre: ${form.get('fullName')} 
-			Correo: ${form.get('email')} 
-			Teléfono: ${form.get('phone')} 
-			Mensaje: ${form.get('message')}`);
-			$mailto.click();
+			fetch("https://formsubmit.co/dlrasesores17@gmail.com", {
+				method: "POST",
+				body: new FormData(e.target)
+			})
+				.then(res => res.ok
+					? newAlert("acepTitle", "Correo enviado", "El correo fue enviado", "success", "#20bb20")
+					: newAlert("errorTitle", "Ocurrió un Error", "El correo no fue enviado, vuelve a intentar más tarde", "error", "#fd1f4a"))
+			
+			// const form = new FormData(this);
+			// $mailto.setAttribute('href', `mailto:dlrasesores17@gmail.com?subject= Asunto: ${form.get('affair')} &body=Nombre: ${form.get('fullName')} 
+			// Correo: ${form.get('email')} 
+			// Teléfono: ${form.get('phone')} 
+			// Mensaje: ${form.get('message')}`);
+			// $mailto.click();
 			limpiarForm()
 		};
 	} else {

@@ -639,11 +639,11 @@
                         </p>
                         <p class="text__usuario">@diegollanosr<span class="text__resaltado">17</span></p>
                     </div>
-                    <form id="formularioContacto" class="formulario__contacto">
+                    <form id="formularioContacto" class="formulario__contacto" action="https://formsubmit.co/dlrasesores17@gmail.com" method="POST">
                         <p>
                             <label class="formulario__contacto__item " for="fullName">Nombre <span
                                     class="text__resaltado">*</span></label>
-                            <input class="formulario__contacto__item__input " type="text" id="fullName" name="fullName" placeholder=" Nombre y Apellido"></input>
+                            <input class="formulario__contacto__item__input " type="text" id="fullName" name="name" placeholder=" Nombre y Apellido"></input>
                         </p>
                         <p>
                             <label class="formulario__contacto__item " for="email">Email <span class="text__resaltado">*</span></label>
@@ -661,8 +661,10 @@
                                 placeholder="Asunto..."></input>
                         </p>
                         <textarea class="formulario__contacto__item__textarea " id="message" name="message" rows="4"
-                            placeholder="* Mensaje"></textarea>
+                        placeholder="* Mensaje"></textarea>
                         <button type="submit" class="formulario__contacto__item__button  button">Enviar</button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://diegollanosr.github.io/">
                         <p id="mensajeError" class="mensaje_contacto"></p>
                     </form>
                 </div>
@@ -692,7 +694,8 @@
             <p> &copy Copyright Diego Llanos R. - <span id="anhoActual"></span></p>
         </section>
     </footer>
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/animaciones.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
-<script src="./assets/js/script.js" defer></script>
-<script src="./assets/js/animaciones.js" defer></script>
 </html>
