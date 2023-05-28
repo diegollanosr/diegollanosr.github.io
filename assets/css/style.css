@@ -894,7 +894,10 @@ footer{
 	background: url(../imagenes/logos/inmowasi.svg) no-repeat center;
 	background-size: contain;
 }
-
+body.dark .img__inmowasi {
+	background: url(../imagenes/logos/inmowasi-white.png) no-repeat center;
+	background-size: contain;
+}
 .img__palmeras {
 	background: url(../imagenes/logos/laspalmeras.png) no-repeat center;
 	background-size: contain;
