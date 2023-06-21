@@ -33,7 +33,7 @@
 		const diaActual = parseInt(hoy.getDate());
 
 		const anhoCumple = 1998;
-		const mesCumple = 04;
+		const mesCumple = 3;
 		const diaCumple = 17;
 		
 		let edad = anhoActual - anhoCumple;

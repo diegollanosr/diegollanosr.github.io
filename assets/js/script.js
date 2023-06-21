@@ -158,7 +158,7 @@ function enviarFormulario(e) {
 			mensajeError.innerHTML = "Corregir campos marcados antes de enviar Formulario"
 		} else {
 			mensajeError.classList.remove("error");
-			fetch("https://formsubmit.co/dlrasesores17@gmail.com", {
+			fetch("https://formsubmit.co/dllanosr17@gmail.com", {
 				method: "POST",
 				body: new FormData(e.target)
 			})
@@ -167,7 +167,7 @@ function enviarFormulario(e) {
 					: newAlert("errorTitle", "Ocurrió un Error", "El correo no fue enviado, vuelve a intentar más tarde", "error", "#fd1f4a"))
 			
 			// const form = new FormData(this);
-			// $mailto.setAttribute('href', `mailto:dlrasesores17@gmail.com?subject= Asunto: ${form.get('affair')} &body=Nombre: ${form.get('fullName')} 
+			// $mailto.setAttribute('href', `mailto:dllanosr17@gmail.com?subject= Asunto: ${form.get('affair')} &body=Nombre: ${form.get('fullName')} 
 			// Correo: ${form.get('email')} 
 			// Teléfono: ${form.get('phone')} 
 			// Mensaje: ${form.get('message')}`);
