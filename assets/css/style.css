@@ -22,12 +22,12 @@
     --font-general: 'Alice', serif;
     --font-courgette: 'Courgette','Segoe Print', cursive;
 
-
     --sombra-modoOscuro: 0 0 15px 8px #8100fa80;
     --img-fotoHome: url(../imagenes/fotodlr.png) no-repeat center;
     --img-logo: url(../imagenes/logo.svg) no-repeat center;
     --img-inmowasi: url(../imagenes/logos/inmowasi.webp) no-repeat center;
     --img-tavo: url(../imagenes/logos/tavo.png) no-repeat center;
+    --img-coficont: url(../imagenes/logos/coficont_iso.png) no-repeat center;
     --img-palmeras: url(../imagenes/logos/laspalmeras.png) no-repeat center;
     --img-modoOscuro: url(../imagenes/moon.jpg) no-repeat center;
  }
@@ -527,6 +527,9 @@ body{
 .img_palmeras{
     background: var(--img-palmeras);
 }
+.img_coficont{
+    background: var(--img-coficont);
+}
 .imgDisenho{
     margin: 0 auto;
 	height: 160px;
@@ -802,6 +805,7 @@ footer{
         --color--texto: var(--color-blanco);
         --color--navselec: var(--color-azul);
         --img-inmowasi: url(../imagenes/logos/inmowasi_white.png) no-repeat center;
+        --img-coficont: url(../imagenes/logos/coficont_iso_blanco.png) no-repeat center;
         --color--background-resaltado: var(--color-azul-oscuro);
         background-color: var(--color--background);
         --color--targets: var(--color-dorado);
