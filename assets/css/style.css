@@ -1,11 +1,11 @@
 :root{
-    --color-blanco: #d2d4e0;
-    --color-gris: #2d2b2b;
+    --color-blanco: #E4E7EE;
+    --color-gris: #333333;
     --color-negro: #06111e;
     --color-dorado: #e7a90c;
-    --color-azul: #183e86;
-    --color-rojo: #bd1024;
-    --color-azul-oscuro: #141F2F;
+    --color-azul: #001e50;
+    --color-rojo: #bf0000;
+    --color-azul-oscuro: #041642;
     --color-azul-transparente: #799deb62;
     --color-blanco-transparente: #d2d4e050;
 
@@ -119,13 +119,13 @@ body{
 .navegacionLink.mostrar,
 .navegacionLink:hover{
     /* background: var(--color-blanco-transparente); */
-    background-color: #E1B74E;
+    background-color: var(--color-dorado);
 
 }
 .navegacionLink.mostrar .navegacionSpan,
 .navegacionLink:hover .navegacionSpan{
     font-weight: bold;
-    color: var(--color--navselec);
+    color: var(--color-azul-oscuro);
 }
 .navegacionLink:hover{
     border-radius: 25px 25px 0 0;
@@ -202,14 +202,14 @@ body{
     .subNavegacionLink:hover{
         /* background: var(--color-dorado); */
         background: var(--color-blanco-transparente);
-        color: var(--color-azul);
+        color: var(--color-azul-oscuro);
         font-weight: bold;
     }
     .subNavegacionLi:last-child :hover{
         border-radius: 0 0 25px 25px;
     }
     .subNavegacionLink:hover .subNavegacionIcon{
-        color: var(--color-azul);
+        color: var(--color-azul-oscuro);
     }
 /* Configuracion Main General*/
 .main{
@@ -366,6 +366,7 @@ body{
 .infoImportante{
     color: var(--color-azul);
     text-align: right;
+    font-weight: bold;
 }
 .textContenedor{
     width: 90%;
@@ -800,7 +801,7 @@ footer{
         --img-modoOscuro: url(../imagenes/sun.jpg) no-repeat center;
         --sombra-modoOscuro: 0 0 15px 8px #f0db2080;
         --color-rojo: #b42020;
-        --color-azul: #0f6de7;
+        --color-azul: #406af3;
         --color-azul-transparente: #4d77d162;
         --color--texto: var(--color-blanco);
         --color--navselec: var(--color-azul);
